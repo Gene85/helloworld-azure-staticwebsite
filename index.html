@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World App</title>
+    <style>
+        body {
+            background-color: #add8e6; /* Baby blue background */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            background-color: lightgray; /* Light gray background for the button */
+            border: none;
+            border-radius: 15px; /* Smooth edges */
+            padding: 10px 20px;
+            font-size: 16px;
+            color: black; /* Black text color */
+            cursor: pointer;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="showMessage()">Click me!</button>
+        <div id="message"></div>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerText = 'Hello World!';
+        }
+    </script>
+</body>
+</html>
